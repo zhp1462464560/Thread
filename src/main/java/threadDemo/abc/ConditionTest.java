@@ -10,6 +10,7 @@ public class ConditionTest {
     public static void main(String[] args) {
         CountDownLatch latch = new CountDownLatch(1);
         Lock lock = new ReentrantLock();
+
         Condition condition1 = lock.newCondition();
         Condition condition2 = lock.newCondition();
         char[] c = new String("123456").toCharArray();
